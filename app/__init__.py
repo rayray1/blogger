@@ -14,7 +14,7 @@ login.login_view = 'login'
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
-from app import routes, models, errors
+from app import views, models, errors
 
 # email_error_log
 if not app.debug:
